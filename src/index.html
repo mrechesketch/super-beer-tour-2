@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Map Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button id="infoTab" class="active-tab">Info</button>
+        <button id="mapTab">Map</button>
+    </nav>
+
+    <main id="app">
+        <!-- Info Section -->
+        <section id="infoSection" class="tab-section">
+            <h1>Info</h1>
+            <p>Placeholder text for the Info page. Replace this with your actual content.</p>
+        </section>
+
+        <!-- Map Section -->
+        <section id="mapSection" class="tab-section hidden">
+            <canvas id="mapCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <button id="prevBtn">← Previous</button>
+                <button id="nextBtn">Next →</button>
+            </div>
+            <div class="zone-display">
+                <img id="zoneImage" src="placeholder.jpg" alt="Zone Image">
+                <p id="zoneDescription">Placeholder description for the zone.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
