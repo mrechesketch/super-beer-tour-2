@@ -33,7 +33,8 @@ nav button:hover {
 
 #mapCanvas {
     border: 1px solid #333;
-    background: #e0f7fa;
+    background-image: url("../images/fort-worth-map.png");
+    background-size: cover;
     margin-bottom: 1rem;
 }
 
