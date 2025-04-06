@@ -34,7 +34,12 @@ nav button:hover {
 #mapCanvas {
     border: 1px solid #333;
     background-image: url("../images/fort-worth-map.png");
-    background-size: cover;
+    background-size: contain;  /* Ensure the image resizes dynamically */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    width: auto;  /* Make the canvas take up 100% of the container width */
+    height: 50%; /* Adjust the height based on width, maintain aspect ratio */
+    max-width: 100%;  /* Ensure it does not exceed the container width */
     margin-bottom: 1rem;
 }
 
@@ -44,14 +49,11 @@ nav button:hover {
     cursor: pointer;
 }
 
-.zone-display {
-    margin-top: 1rem;
-}
-
 .zone-display img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
+    width: auto;  /* Make the image take up 80% of the container width */
+    height: 50%;  /* Maintain the aspect ratio */
+    max-width: 100%;  /* Ensure it does not exceed the container width */
+    object-fit: cover;  /* Ensure the image covers the area while maintaining its aspect ratio */
     display: block;
     margin: 0 auto;
 }
