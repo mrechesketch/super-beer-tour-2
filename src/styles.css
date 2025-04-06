@@ -37,8 +37,8 @@ nav button:hover {
     background-size: contain;  /* Ensure the image resizes dynamically */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Avoid repeating the image */
-    width: auto;  /* Make the canvas take up 100% of the container width */
-    height: 50%; /* Adjust the height based on width, maintain aspect ratio */
+    width: 80%;  /* Make the canvas take up 100% of the container width */
+    height: auto; /* Adjust the height based on width, maintain aspect ratio */
     max-width: 100%;  /* Ensure it does not exceed the container width */
     margin-bottom: 1rem;
 }
@@ -49,11 +49,31 @@ nav button:hover {
     cursor: pointer;
 }
 
+.zone-display {
+    margin-top: 1rem;
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Optional: to center the content in the container */
+}
+
 .zone-display img {
-    width: auto;  /* Make the image take up 80% of the container width */
-    height: 50%;  /* Maintain the aspect ratio */
-    max-width: 100%;  /* Ensure it does not exceed the container width */
-    object-fit: cover;  /* Ensure the image covers the area while maintaining its aspect ratio */
-    display: block;
-    margin: 0 auto;
+    width: 40%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    object-fit: cover;
+    margin-right: 1rem; /* Add space between the image and the description */
+}
+
+.zone-display p {
+    max-width: 300px; /* Limit the width of the description */
+    margin: 0; /* Remove any default margin */
+}
+
+@media (max-width: 600px) {
+    #mapCanvas {
+        height: 200px; /* Set a fixed height on smaller screens */
+    }
+
+    .zone-display img {
+        width: 100%;  /* Use full width on mobile */
+    }
 }
