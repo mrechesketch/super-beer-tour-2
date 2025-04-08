@@ -1,11 +1,9 @@
+/* General layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    /* height: 100vh; 
-    display: flex;
-    flex-direction: column; */
 }
 
 nav {
@@ -26,42 +24,63 @@ nav button:hover {
     background: #777;
 }
 
-.tab-section {
-    padding: 1rem;
-}
-
-.hidden {
-    display: none;
-}
-
-.controls button {
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    cursor: pointer;
-}
-
-.zone-display-image img {
-    width: 80%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
-    object-fit: cover;
-    margin-right: 1rem; /* Add space between the image and the description */
-}
-
-.zone-display-text p {
-    max-width: 300px; /* Limit the width of the description */
-    margin: 0; /* Remove any default margin */
-}
-
 /* Ensure hidden sections remain hidden */
 .hidden {
     display: none;
 }
 
-#mapTab.active-tab ~ #mapSection {
-    display: flex; /* Display mapSection only when map tab is active */
+.tab-section {
+    padding: 1rem;
 }
 
-/* FAQ and info sections */
-#infoSection, #faqSection {
+/* Explore Section Layout */
+#mapSection {
+    display: hidden; /* Hidden by default */
+    flex-direction: column; /* Stack content vertically */
+    height: 100vh; /* Full height of the screen when active */
+}
+
+#mapTab.active-tab ~ #mapSection {
+    display: flex; /* Only display when map tab is active */
+}
+
+.zone-display-image {
+    flex: 1; /* Image section takes up top half of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zone-display-image img {
+    width: 100%; /* Ensure the image stretches to 100% width */
+    height: auto; /* Keep the aspect ratio intact */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}
+
+.zone-display {
+    flex: 1; /* Description section takes up bottom half of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1rem;
+    background-color: #f4f4f4; /* Optional background color for contrast */
+}
+
+.zone-display p {
+    max-width: 80%; /* Limit description text width for readability */
+    margin: 0;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .zone-display-image img {
+        width: 100%;
+    }
+
+    .zone-display p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
 }

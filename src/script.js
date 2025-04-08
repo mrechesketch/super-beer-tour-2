@@ -23,23 +23,35 @@ const zones = [
 let currentZoneIndex = 0;
 
 // Tab switching
-infoTab.addEventListener('click', () => {
-    infoSection.classList.remove('hidden');
-    mapSection.classList.add('hidden');
-    faqSection.classList.add('hidden');
+document.getElementById('mapTab').addEventListener('click', () => {
+    document.getElementById('mapTab').classList.add('active-tab');
+    document.getElementById('infoTab').classList.remove('active-tab');
+    document.getElementById('faqTab').classList.remove('active-tab');
+    
+    document.getElementById('mapSection').classList.remove('hidden');
+    document.getElementById('infoSection').classList.add('hidden');
+    document.getElementById('faqSection').classList.add('hidden');
+    updateZone()
 });
 
-mapTab.addEventListener('click', () => {
-    mapSection.classList.remove('hidden');
-    infoSection.classList.add('hidden');
-    faqSection.classList.add('hidden');
-    updateZone();
+document.getElementById('infoTab').addEventListener('click', () => {
+    document.getElementById('infoTab').classList.add('active-tab');
+    document.getElementById('mapTab').classList.remove('active-tab');
+    document.getElementById('faqTab').classList.remove('active-tab');
+    
+    document.getElementById('infoSection').classList.remove('hidden');
+    document.getElementById('mapSection').classList.add('hidden');
+    document.getElementById('faqSection').classList.add('hidden');
 });
 
-faqTab.addEventListener('click', () => {
-    faqSection.classList.remove('hidden');
-    infoSection.classList.add('hidden');
-    mapSection.classList.add('hidden');
+document.getElementById('faqTab').addEventListener('click', () => {
+    document.getElementById('faqTab').classList.add('active-tab');
+    document.getElementById('mapTab').classList.remove('active-tab');
+    document.getElementById('infoTab').classList.remove('active-tab');
+    
+    document.getElementById('faqSection').classList.remove('hidden');
+    document.getElementById('infoSection').classList.add('hidden');
+    document.getElementById('mapSection').classList.add('hidden');
 });
 
 // Navigation buttons
