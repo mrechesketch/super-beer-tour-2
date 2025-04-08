@@ -3,6 +3,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    /* height: 100vh; 
+    display: flex;
+    flex-direction: column; */
 }
 
 nav {
@@ -31,49 +34,41 @@ nav button:hover {
     display: none;
 }
 
-#mapCanvas {
-    border: 1px solid #333;
-    background-image: url("../images/fort-worth-map.png");
-    background-size: contain;  /* Ensure the image resizes dynamically */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Avoid repeating the image */
-    width: 80%;  /* Make the canvas take up 100% of the container width */
-    height: auto; /* Adjust the height based on width, maintain aspect ratio */
-    max-width: 100%;  /* Ensure it does not exceed the container width */
-    margin-bottom: 1rem;
-}
-
 .controls button {
     padding: 0.5rem 1rem;
     margin: 0.5rem;
     cursor: pointer;
 }
 
-.zone-display {
-    margin-top: 1rem;
-    display: flex; /* Use flexbox to arrange items horizontally */
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Optional: to center the content in the container */
-}
-
-.zone-display img {
-    width: 40%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
+.zone-display-image img {
+    height: 50%; /* Adjust width as needed */
+    width: auto; /* Adjust height as needed */
     object-fit: cover;
     margin-right: 1rem; /* Add space between the image and the description */
 }
 
-.zone-display p {
+.zone-display-text p {
     max-width: 300px; /* Limit the width of the description */
     margin: 0; /* Remove any default margin */
 }
 
 @media (max-width: 600px) {
-    #mapCanvas {
-        height: 200px; /* Set a fixed height on smaller screens */
-    }
 
     .zone-display img {
-        width: 100%;  /* Use full width on mobile */
+        height: 50%;  /* Use full width on mobile */
     }
+}
+
+/* Ensure hidden sections remain hidden */
+.hidden {
+    display: none;
+}
+
+#mapTab.active-tab ~ #mapSection {
+    display: flex; /* Display mapSection only when map tab is active */
+}
+
+/* FAQ and info sections */
+#infoSection, #faqSection {
+    padding: 1rem;
 }

@@ -9,7 +9,7 @@
 <body>
     <nav>
         <button id="infoTab" class="active-tab">Info</button>
-        <button id="mapTab">Map</button>
+        <button id="mapTab">Explore</button>
         <button id="faqTab">FAQ</button>
     </nav>
 
@@ -22,13 +22,14 @@
 
         <!-- Map Section -->
         <section id="mapSection" class="tab-section hidden">
-            <canvas id="mapCanvas" width="600" height="400"></canvas>
+            <div class="zone-display-image">
+                <img id="zoneImage" src="placeholder.jpg" alt="Zone Image">
+            </div>
             <div class="controls">
                 <button id="prevBtn">← Previous</button>
                 <button id="nextBtn">Next →</button>
             </div>
             <div class="zone-display">
-                <img id="zoneImage" src="placeholder.jpg" alt="Zone Image" width="400" height="400">
                 <p id="zoneDescription">Placeholder description for the zone.</p>
             </div>
         </section>
