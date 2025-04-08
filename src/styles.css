@@ -41,8 +41,8 @@ nav button:hover {
 }
 
 .zone-display-image img {
-    height: 50%; /* Adjust width as needed */
-    width: auto; /* Adjust height as needed */
+    width: 80%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
     object-fit: cover;
     margin-right: 1rem; /* Add space between the image and the description */
 }
@@ -54,7 +54,7 @@ nav button:hover {
 
 @media (max-width: 600px) {
 
-    .zone-display img {
+    .zone-display-image img {
         height: 50%;  /* Use full width on mobile */
     }
 }
