@@ -52,13 +52,6 @@ nav button:hover {
     margin: 0; /* Remove any default margin */
 }
 
-@media (max-width: 600px) {
-
-    .zone-display-image img {
-        height: 50%;  /* Use full width on mobile */
-    }
-}
-
 /* Ensure hidden sections remain hidden */
 .hidden {
     display: none;
