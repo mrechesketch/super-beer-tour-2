@@ -12,46 +12,46 @@ const zoneDescription = document.getElementById('zoneDescription');
 
 // Zone data
 const zones = [
-    { name: "Tornado Zone", image: '../images/1-tornado-zone.png' },
-    { name: "Bridge Zone", image: '../images/2-bridge-zone.png'},
-    { name: "CutOut Zone", image: '../images/3-cut-out-zone.png' },
-    { name: "Water Gardens Zone", image: '../images/4-water-garden-zone.png' },
-    { name: "Wild West Zone", image: '../images/5-wild-west-zone.png' },
-    { name: "Panther Island Zone", image: '../images/6-venue-zone.png' }
+    { name: "Tornado Zone", image: '../data/1-tornado-zone.png', text: '../data/1-tornado-zone.txt'},
+    { name: "Bridge Zone", image: '../data/2-bridge-zone.png', text: '../data/2-bridge-zone.txt'},
+    { name: "CutOut Zone", image: '../data/3-cut-out-zone.png', text: '../data/3-cut-out-zone.txt'},
+    { name: "Water Gardens Zone", image: '../data/4-water-garden-zone.png', text: '../data/4-water-garden-zone.txt'},
+    { name: "Wild West Zone", image: '../data/5-wild-west-zone.png', text: '../data/5-wild-west-zone.txt' },
+    { name: "Panther Island Zone", image: '../data/6-venue-zone.png', text: '../data/6-venue-zone.txt' }
 ];
 
 let currentZoneIndex = 0;
 
 // Tab switching
-document.getElementById('mapTab').addEventListener('click', () => {
-    document.getElementById('mapTab').classList.add('active-tab');
-    document.getElementById('infoTab').classList.remove('active-tab');
-    document.getElementById('faqTab').classList.remove('active-tab');
+mapTab.addEventListener('click', () => {
+    mapTab.classList.add('active-tab');
+    infoTab.classList.remove('active-tab');
+    faqTab.classList.remove('active-tab');
     
-    document.getElementById('mapSection').classList.remove('hidden');
-    document.getElementById('infoSection').classList.add('hidden');
+    mapSection.classList.remove('hidden');
+    infoSection.classList.add('hidden');
     document.getElementById('faqSection').classList.add('hidden');
     updateZone()
 });
 
-document.getElementById('infoTab').addEventListener('click', () => {
-    document.getElementById('infoTab').classList.add('active-tab');
-    document.getElementById('mapTab').classList.remove('active-tab');
-    document.getElementById('faqTab').classList.remove('active-tab');
+infoTab.addEventListener('click', () => {
+    infoTab.classList.add('active-tab');
+    mapTab.classList.remove('active-tab');
+    faqTab.classList.remove('active-tab');
     
-    document.getElementById('infoSection').classList.remove('hidden');
-    document.getElementById('mapSection').classList.add('hidden');
-    document.getElementById('faqSection').classList.add('hidden');
+    infoSection.classList.remove('hidden');
+    mapSection.classList.add('hidden');
+    faqSection.classList.add('hidden');
 });
 
 document.getElementById('faqTab').addEventListener('click', () => {
-    document.getElementById('faqTab').classList.add('active-tab');
-    document.getElementById('mapTab').classList.remove('active-tab');
-    document.getElementById('infoTab').classList.remove('active-tab');
+    faqTab.classList.add('active-tab');
+    mapTab.classList.remove('active-tab');
+    infoTab.classList.remove('active-tab');
     
-    document.getElementById('faqSection').classList.remove('hidden');
-    document.getElementById('infoSection').classList.add('hidden');
-    document.getElementById('mapSection').classList.add('hidden');
+    faqSection.classList.remove('hidden');
+    infoSection.classList.add('hidden');
+    mapSection.classList.add('hidden');
 });
 
 // Navigation buttons
@@ -70,7 +70,17 @@ function updateZone() {
     // Placeholder logic for images and text
     const zone = zones[currentZoneIndex];
     zoneImage.src = zone.image; // Replace with actual image path later
-    zoneDescription.textContent = `Placeholder description for ${zone.name}`;
+    // Fetch the text content from the .txt file
+    fetch(zone.text)
+        .then(response => response.text()) // Get the file content as text
+        .then(text => {
+            // Insert the plain text into the description section
+            zoneDescription.textContent = text; // Use textContent for plain text
+        })
+        .catch(error => {
+            console.error('Error loading the text file:', error);
+            zoneDescription.textContent = 'Failed to load the description.';
+        });
 }
 
 // Initialize
