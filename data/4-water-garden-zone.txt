@@ -1,7 +1,6 @@
-💦 Stop #4 – Shhh... can you hear it? The sound pulls you in — rushing, rippling, echoing like footsteps through a futuristic temple. Welcome to the Water Gardens Zone: part oasis, part dreamscape, and fully iconic. 💧🌆
-
-Built in 1974 by famed architect Philip Johnson, the Fort Worth Water Gardens are a geometric descent into sound and motion. Water doesn’t just flow here — it falls, whispers, and roars. You’re not just walking into a park — you’re stepping into an elemental ritual.
-
-Feel the mist on your face. Lose your balance (figuratively). Channel your inner philosopher, or your inner child. Either works. Just don’t fall in — it’s happened before. 😬💦
-
-Time bends in this zone. Stay too long, and you may start to feel like water. 🌀
+    <h2>💦 Water Gardens Zone<br><small>Fort Worth Water Gardens</small></h2>
+    <p>
+      Designed in 1974 by architect Philip Johnson, the Water Gardens are like an acoustic dream — cascading water and concrete geometry meet in perfect harmony. 💧🎶
+      <br><br>
+      This zone invites you to slow your pace, feel the mist, and descend into sound. Let the waves reset your senses. Just don’t fall in. (Seriously.) 😅🌀
+    </p>

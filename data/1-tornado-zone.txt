@@ -1,3 +1,6 @@
-🌪️ Stop #1 – In 2000, an F3 tornado tore through the Linwood neighborhood, leveling homes and shaking the foundations of this historic community. For years, the area sat in quiet recovery — a patchwork of empty lots and resilient neighbors. Today, Linwood has transformed into a walkable, vibrant district full of townhomes, trails, and hidden gems.
-
-At the heart of it all is Jesse D. Sandoval Park — named after a beloved city council member and community leader. This zone honors Linwood’s past while kicking off our tour with a toast to rebirth, resilience, and a neighborhood that weathered the storm. 🌪️🌳🍻
+    <h2>🌪️ Tornado Zone<br><small>Jesse D. Sandoval Park (Linwood)</small></h2>
+    <p>
+      In 2000, an F3 tornado tore through Linwood, leaving a path of destruction. But like all good origin stories, this one ends in rebirth. Today, Jesse D. Sandoval Park stands at the heart of a reimagined neighborhood. 
+      <br><br>
+      This zone honors that transformation — from rubble to renewal. It’s where the tour begins, and the winds of fate start to swirl. Bring your drink, your curiosity, and your appreciation for second chances. 🍻🌳
+    </p>

@@ -1,3 +1,6 @@
-🌉 Stop #2 – Hold onto your hats — we’re crossing into adventure! 🌬️ The West 7th Street Bridge isn’t just a way across the Trinity River — it’s a modern marvel. With its sleek, glowing arches and unique cable-stayed design, this 2013 structure redefined the Fort Worth skyline.
-
-Connecting downtown to the bustling West 7th district, the bridge is your gateway to food, music, and mayhem. It’s where concrete meets cool. Snap a selfie, soak in the views, and let the breeze carry you into the night. This zone is all about motion, momentum, and crossing into something new. 🎶🌉🍸
+    <h2>🌉 Bridge Zone<br><small>West 7th Street Bridge</small></h2>
+    <p>
+      The West 7th Street Bridge isn’t just a crossing — it’s a statement. Its glowing arches have become an icon of Fort Worth’s modern edge, linking downtown with the vibrant West 7th district. 
+      <br><br>
+      In this zone, we celebrate bridges — literal and metaphorical — and let the river breeze carry us forward. ✨🌬️
+    </p>

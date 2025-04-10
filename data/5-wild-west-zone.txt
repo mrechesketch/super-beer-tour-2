@@ -1,7 +1,6 @@
-🤠 Stop #5 – Welcome to the Wild West Zone — where the boots are loud, the stories are taller, and the ghosts never quite left. 🌵🍻
-
-Back in the late 1800s, this wasn’t a polished plaza — it was the edge of civilization, known far and wide as Hell’s Half Acre. Think saloons, gambling halls, brothels, and bar brawls... basically the original Fort Worth nightlife. Lawmen and outlaws drank side by side. Sometimes shots rang out. Sometimes friendships did too. 🔫🃏💃
-
-These days, Sundance Square shines with modern flair — string lights, public art, and a square made for dancing — but if you listen closely, you might still hear the piano music from a dusty old saloon echoing off the bricks.
-
-Saddle up and grab a drink. This stop is for legends — living and otherwise. 🤠🎶
+    <h2>🤠 Wild West Zone<br><small>Sundance Square</small></h2>
+    <p>
+      Welcome to the original Fort Worth nightlife. In the late 1800s, this was Hell’s Half Acre — a chaotic strip of saloons, dance halls, and outlaws. 🔫🍻
+      <br><br>
+      Today, Sundance Square sparkles with lights and public art, but it hasn’t forgotten its past. Every drink here comes with a side of legend. Saddle up — you’re walking in outlaw boots. 🐎
+    </p>

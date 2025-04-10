@@ -1,7 +1,6 @@
-💼 Stop #3 – Step carefully — the patterns beneath your feet have a strange rhythm here. 👁‍🗨 At Burk Burnett Park, the sharp-angled sidewalks feel like a coded message... and the aluminum silhouette of a man with a briefcase seems to be going somewhere. But where? 👤🧳
-
-Some say he’s late for a meeting. Others say he’s walking into another dimension. This zone invites you to slow down and look around — peer through the windows of nearby buildings and you might spot actual dinosaur bones on display. Yes, seriously. 🦖
-
-And just beneath your feet? An old subway system, long sealed off and half-forgotten. The city above moved on... but something down there might still be moving. 👀🚇
-
-Don’t get left behind. This zone has edges. Stay sharp. 🌀
+    <h2>🕴️ Cut Out Zone<br><small>Burk Burnett Park</small></h2>
+    <p>
+      Something’s off here… the ground beneath your feet forms hypnotic geometric patterns, and a lone aluminum figure strides toward nowhere — a man with a briefcase, frozen in silhouette. 👤🧳
+      <br><br>
+      Keep your eyes peeled: in nearby buildings you might spot real dinosaur fossils. And just beneath your feet lies the hushed remains of Fort Worth’s old subway system. This zone whispers with secrets. Step lightly. 🦖🚇
+    </p>
