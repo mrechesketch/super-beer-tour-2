@@ -12,12 +12,12 @@ const zoneDescription = document.getElementById('zoneDescription');
 
 // Zone data
 const zones = [
-    { name: "Tornado Zone", image: '../data/1-tornado-zone.png', file: '../data/1-tornado-zone.txt'},
-    { name: "Bridge Zone", image: '../data/2-bridge-zone.png', file: '../data/2-bridge-zone.txt'},
-    { name: "CutOut Zone", image: '../data/3-cut-out-zone.png', file: '../data/3-cut-out-zone.txt'},
-    { name: "Water Gardens Zone", image: '../data/4-water-garden-zone.png', file: '../data/4-water-garden-zone.txt'},
-    { name: "Wild West Zone", image: '../data/5-wild-west-zone.png', file: '../data/5-wild-west-zone.txt' },
-    { name: "Panther Island Zone", image: '../data/6-venue-zone.png', file: '../data/6-venue-zone.txt' }
+    { name: "Tornado Zone", image: 'data/1-tornado-zone.png', file: 'data/1-tornado-zone.txt'},
+    { name: "Bridge Zone", image: 'data/2-bridge-zone.png', file: 'data/2-bridge-zone.txt'},
+    { name: "CutOut Zone", image: 'data/3-cut-out-zone.png', file: 'data/3-cut-out-zone.txt'},
+    { name: "Water Gardens Zone", image: 'data/4-water-garden-zone.png', file: 'data/4-water-garden-zone.txt'},
+    { name: "Wild West Zone", image: 'data/5-wild-west-zone.png', file: 'data/5-wild-west-zone.txt' },
+    { name: "Panther Island Zone", image: 'data/6-venue-zone.png', file: 'data/6-venue-zone.txt' }
 ];
 
 let currentZoneIndex = 0;
