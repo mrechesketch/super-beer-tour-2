@@ -1,9 +1,9 @@
 const infoTab = document.getElementById('infoTab');
 const mapTab = document.getElementById('mapTab');
-const faqTab = document.getElementById('faqTab');
+// const faqTab = document.getElementById('faqTab');
 const infoSection = document.getElementById('infoSection');
 const mapSection = document.getElementById('mapSection');
-const faqSection = document.getElementById('faqSection');
+// const faqSection = document.getElementById('faqSection');
 
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -26,33 +26,33 @@ let currentZoneIndex = 0;
 mapTab.addEventListener('click', () => {
     mapTab.classList.add('active-tab');
     infoTab.classList.remove('active-tab');
-    faqTab.classList.remove('active-tab');
+    // faqTab.classList.remove('active-tab');
     
     mapSection.classList.remove('hidden');
     infoSection.classList.add('hidden');
-    document.getElementById('faqSection').classList.add('hidden');
+    // document.getElementById('faqSection').classList.add('hidden');
     updateZone()
 });
 
 infoTab.addEventListener('click', () => {
     infoTab.classList.add('active-tab');
     mapTab.classList.remove('active-tab');
-    faqTab.classList.remove('active-tab');
+    // faqTab.classList.remove('active-tab');
     
     infoSection.classList.remove('hidden');
     mapSection.classList.add('hidden');
-    faqSection.classList.add('hidden');
+    // faqSection.classList.add('hidden');
 });
 
-document.getElementById('faqTab').addEventListener('click', () => {
-    faqTab.classList.add('active-tab');
-    mapTab.classList.remove('active-tab');
-    infoTab.classList.remove('active-tab');
+// document.getElementById('faqTab').addEventListener('click', () => {
+//     faqTab.classList.add('active-tab');
+//     mapTab.classList.remove('active-tab');
+//     infoTab.classList.remove('active-tab');
     
-    faqSection.classList.remove('hidden');
-    infoSection.classList.add('hidden');
-    mapSection.classList.add('hidden');
-});
+//     faqSection.classList.remove('hidden');
+//     infoSection.classList.add('hidden');
+//     mapSection.classList.add('hidden');
+// });
 
 // Navigation buttons
 prevBtn.addEventListener('click', () => {
