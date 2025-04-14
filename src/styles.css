@@ -8,9 +8,9 @@ body {
 
 .card {
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    padding: 1rem;
     /* max-width: 600px; */
     margin: 1rem auto;
 }
@@ -81,7 +81,7 @@ nav button:hover {
 }
 
 .zone-display-image img {
-    width: 60%; /* Ensure the image stretches to 100% width */
+    width: 50%; /* Ensure the image stretches to 100% width */
     height: auto; /* Keep the aspect ratio intact */
     object-fit: cover; /* Ensure the image fills the container without distortion */
 }
@@ -98,12 +98,12 @@ nav button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     /* max-width: 600px; */
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     font-family: Arial, sans-serif;
 }
 
 .zone-display p {
-    max-width: 90%; /* Limit description text width for readability */
+    max-width: 100%; /* Limit description text width for readability */
     margin: 0;
     color: #333;
     font-size: 1rem;
